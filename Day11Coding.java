@@ -27,7 +27,7 @@ public class Day11Coding {
         } else if (operasi == '*'){
             hasil = angka1 * angka2;
         } else if (operasi == '/'){
-            if (operasi != 0){
+            if (oangka2 != 0){
             hasil = angka1 / angka2;
             } else {
                 System.out.println("Tidak dapat membagi dengan 0");
