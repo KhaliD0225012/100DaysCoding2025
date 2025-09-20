@@ -35,6 +35,15 @@ public class Day12Coding {
         
         System.out.print("Pekerjaan\t: ");
         String kerja = input.nextLine();
+
+        System.out.println("Nama\t\t: " + nama);
+        System.out.println("Jenis Kelamin\t: " + gender );
+        System.out.printf("Tempat/Tanggal Lahir\t: %s, %s\n", tempat, tanggal);
+        System.out.println("Agama\t\t: " + agama);
+        System.out.println("Alamat\t\t: " + alamat);
+        System.out.println("Golongan Darah\t: " + darah);
+        System.out.println("Status\t\t: " + status);
+        System.out.println("Pekerjaan\t:" + kerja);
         
     }
     
