@@ -24,7 +24,7 @@ public class Day14Coding {
         System.out.println("Integer\t\t: " + dataInt);
         System.out.println("Long\t\t: " + dataLong);
         System.out.printf("Float\t\t: %.3f\n", dataFloat);
-        System.out.printf("Double\t\t: 5.3f\n", dataDouble);
+        System.out.printf("Double\t\t: %.3f\n", dataDouble);
         System.out.println("Character\t: " + dataChar);
         System.out.println("Boolean\t\t: " + dataBoolean);
         
