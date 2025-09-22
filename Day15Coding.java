@@ -1,8 +1,8 @@
-package daay15coding;
+package day15coding;
 
 import java.util.Scanner;
 
-public class Daay15Coding {
+public class Day15Coding {
    
     public static void main(String[] args) {
         
