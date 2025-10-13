@@ -19,6 +19,7 @@ public class Latihan2 {
                 potongan = bel*10/100;
                 bayar = bel-potongan;
                 System.out.printf("Total belanja\t: Rp%.2f\n", bel);
+                System.out.println("Selamat! Anda mendapat diskon 10%");
                 System.out.printf("Potongan\t: Rp%.2f\n", potongan);
                 System.out.printf("Total bayar\t: Rp%.2f\n", bayar);
             } else {
