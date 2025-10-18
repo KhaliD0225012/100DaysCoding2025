@@ -97,13 +97,10 @@ public class Latihan3 {
             System.out.println("\n== QRIS ==");
             System.out.print("Masukkan besaran pembayaran: ");
             int bp = s.nextInt();
-            if (bp >= total){
-                System.out.println("\nPembayaran berhasil");
-                if (bp > total){
-                    System.out.printf("Ambil kembalian sebesar Rp%d di kasir\n", bp-total);
-                }
+            if (bp == total){
+                System.out.println("Pembayaran berhasil");
             } else {
-                System.out.println("\nPembayaran tidak mencukupi");
+                System.out.println("Pembayaran tidak benar");
                 return;
             }
         } else {
