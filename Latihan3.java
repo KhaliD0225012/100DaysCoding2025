@@ -94,6 +94,18 @@ public class Latihan3 {
             System.out.println("Pembayaran dengan CASH. Silakan bayar di kasir");
         } else if (b==2){
             System.out.println("Pembayaran dengan QRIS. Silakan scan QR ");
+            System.out.println("\n== QRIS ==");
+            System.out.print("Masukkan besaran pembayaran: ");
+            int bp = s.nextInt();
+            if (bp >= total){
+                System.out.println("\nPembayaran berhasil");
+                if (bp > total){
+                    System.out.printf("Ambil kembalian sebesar Rp%d di kasir\n", bp-total);
+                }
+            } else {
+                System.out.println("\nPembayaran tidak mencukupi");
+                return;
+            }
         } else {
             System.out.println("Pilih yang tersedia");
             return;
