@@ -29,7 +29,7 @@ public class Day42Coding {
         
         System.out.printf("%-20s: %s\n", "Nama Karyawan", nama);
         System.out.printf("%-20s: Rp%.1f\b\b\n", "Gaji kotor", gk);
-        System.out.printf("%-20s: %.1f\b\b%c\n", "Pajak penghasilan", pajak, '%);
+        System.out.printf("%-20s: %.1f\b\b%c\n", "Pajak penghasilan", pajak, '%');
         System.out.printf("%-20s: Rp%.1f\b\b\n", "Gaji bersih", gb);
     }
     
