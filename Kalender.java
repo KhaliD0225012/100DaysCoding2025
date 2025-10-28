@@ -70,13 +70,14 @@ public class Kalender {
         }
         
         int hari = 1;
-        int kabisat = tahun/4;
+        int kabisat = tahun/4 - tahun/100 + tahun/400;
         
         hari += (tahun-1)*365 + kabisat;
         for (int i = 1; i <= bulan; i++) {
             int tambah;
-            switch (bulan) {
+            switch (i) {
                 case 1 -> tambah = 0;
+                case 2 -> tambah = 31;
                 case 3 -> {
                     if (tahun%4 == 0){
                         tambah = 29;
@@ -84,39 +85,41 @@ public class Kalender {
                         tambah = 28;
                     }
                 }
-                default -> {
-                    if (bulan < 8){
-                        if (bulan%2 == 0){
-                            tambah = 31;
-                        } else {
-                            tambah = 30;
-                        }
+                case 4 -> tambah = 31;
+                case 5 -> tambah = 30;
+                case 6 -> tambah = 31;
+                case 7 -> tambah = 30;
+                case 8 -> tambah = 31;
+                case 9 -> tambah = 31;
+                case 10 -> tambah = 30;
+                case 11 -> {
+                    if (tahun <= 1582){
+                        tambah = 21;
                     } else {
-                        if (bulan%2 != 0){
-                            tambah = 31;
-                        } else {
-                            tambah = 30;
-                        }
+                        tambah = 31;
                     }
                 }
+                default -> tambah = 30;
             }
             hari += tambah;
         }
         
         hari += tanggal;
-        if (tahun < 1582){
-            hari -= 10;
-        }
         hari %= 7;
+        if (tahun <= 1582 && bulan <= 10 && tanggal <= 14){
+            hari += tahun/100 - tahun/400;
+            hari -= 2;
+            hari %= 7;
+        }       
         
         String H;
         H = switch (hari) {
-            case 1 -> "Ahad";
-            case 2 -> "Senin";
-            case 3 -> "Selasa";
-            case 4 -> "Rabu";
-            case 5 -> "Kamis";
-            case 6 -> "Jum'at";
+            case 1, -6 -> "Ahad";
+            case 2, -5 -> "Senin";
+            case 3, -4 -> "Selasa";
+            case 4, -3 -> "Rabu";
+            case 5, -2 -> "Kamis";
+            case 6, -1 -> "Jum'at";
             default -> "Sabtu";
         };
         String B;
