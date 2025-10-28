@@ -68,6 +68,10 @@ public class Kalender {
             System.out.println("\n<< Tanggal tidak ada >>");
             return;
         }
+        if (tahun%100 == 0 && tahun%400 != 0 && bulan == 2 && tanggal > 28){
+            System.out.println("\n<< Tanggal tidak ada >>");
+            return;
+        }
         
         int hari = 1;
         int kabisat = tahun/4 - tahun/100 + tahun/400;
