@@ -9,13 +9,14 @@ public class Day61Coding {
         Scanner s = new Scanner(System.in);
         System.out.print("Kelipatan dari: ");
         int m = s.nextInt();
-        System.out.printf("Cetak kelipatan %d dari 1 sampai ", m);
+        System.out.printf("Cari kelipatan %d dari 1 sampai ", m);
         int n = s.nextInt();
-        int M = m;
-        for (int i = 0; i < n; i++) {
-            System.out.println(m);
-            m += M;
+        for (int i = 1; i <= n; i++) {
+            if (i%m == 0){
+                System.out.println(i);
+            }
         }
+        
     }
     
 }
