@@ -19,7 +19,7 @@ public class Day68Coding {
                 }
               
             }
-          
+            System.out.println("");
         }
       
     }
