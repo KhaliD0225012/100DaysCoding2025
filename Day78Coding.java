@@ -96,7 +96,7 @@ public class Day78Coding {
             System.out.print("Sandi\t: ");
             inSandi = s.nextLine();
             if (!(inEmail.equals(email) && inNama.equals(nama) && inSandi.equals(sandi))) {
-                System.out.println("<< EMAIL / NAMA / SANDI SALAH");
+                System.out.println("<< EMAIL / NAMA / SANDI SALAH >>");
             }
         } while (!(inEmail.equals(email) && inNama.equals(nama) && inSandi.equals(sandi)));
         System.out.println("\n<< LOG IN BERHASIL >>");
