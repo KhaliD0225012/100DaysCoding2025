@@ -10,7 +10,7 @@ public class Day86Coding {
             1, 0, 4, 34, 65, 32, 12, 8, 6
         };
         Arrays.sort(a);
-        System.out.println("1. Nilai minimal: "+ a[0]);
+        System.out.println("Nilai minimal: "+ a[0]);
         
     }
     
